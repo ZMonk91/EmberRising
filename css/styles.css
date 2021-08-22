@@ -1,0 +1,99 @@
+.background-bg {
+  background: rgb(12, 23, 62);
+  background: radial-gradient(
+    circle,
+    rgba(12, 23, 62, 1) 0%,
+    rgba(9, 117, 121, 1) 50%,
+    rgba(12, 23, 62, 1) 90%
+  );
+  height: 100vh;
+  min-height: -webkit-fill-available;
+  overflow: hidden;
+}
+html {
+  height: -webkit-fill-available;
+}
+
+.login-container {
+  margin-top: 33vh;
+}
+.login-card {
+  background-color: #172132;
+}
+.login-header {
+  text-align: center;
+  font-size: 2rem;
+  background-color: #172132;
+  color: #d1d3d7;
+}
+
+.login-body {
+  font-family: "Raleway", sans-serif;
+  background-color: #192538;
+  color: #d1d3d7;
+}
+
+.title-font {
+  font-family: "Staatliches", cursive;
+  text-shadow: 0 -5px 6px rgba(9, 117, 121, 0.64);
+}
+
+.form-control {
+  background-color: #192538;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+}
+.form-control:focus {
+  background-color: #172132;
+  border-color: #097579;
+  color: #d1d3d7;
+  box-shadow: 0 0 0 1px rgba(9, 117, 121, 0.25);
+}
+
+.btn-primary {
+  background-color: #097579;
+  border-color: #097579;
+}
+
+.btn-primary:hover {
+  background-color: #172132;
+  border-color: #097579;
+  color: #d1d3d7;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:focus {
+  background-color: #097579;
+  border-color: #097579;
+  color: #d1d3d7;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 3px rgba(9, 117, 121, 0.25);
+}
+
+.btn-secondary {
+  background-color: #ef233c;
+  border-color: #172132;
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active,
+.btn-secondary:focus {
+  background-color: #172132;
+}
+
+.btn-secondary:hover {
+  background-color: #172132;
+  border-color: #097579;
+  color: #d1d3d7;
+}
+.btn-secondary:not(:disabled):not(.disabled).active:focus,
+.btn-secondary:not(:disabled):not(.disabled):active:focus,
+.show > .btn-secondary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 3px rgba(9, 117, 121, 0.25);
+}
+
+.btn:focus {
+  box-shadow: 0 0 0 0.1px rgba(9, 117, 121, 0.25);
+}

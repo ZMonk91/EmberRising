@@ -1,0 +1,37 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "A portfolio project for NuCamp, attempting to create a mobile friendly web game",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server",
+    "start": "npm run lite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZMonk91/EmberRising.git"
+  },
+  "keywords": [
+    "nucamp",
+    "game",
+    "portfolio",
+    "ember",
+    "rising"
+  ],
+  "author": "Zachary Monk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZMonk91/EmberRising/issues"
+  },
+  "homepage": "https://github.com/ZMonk91/EmberRising#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.9.3",
+    "bootstrap": "^4.6.0",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  }
+}

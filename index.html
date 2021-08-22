@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Raleway&family=Staatliches&display=swap");
+    </style>
+    <title>Ember Rising</title>
+  </head>
+
+  <body class="background-bg">
+    <div class="container-fluid login-container">
+      <div class="row justify-content-center">
+        <div class="col-xs-6 col-sm-8">
+          <div class="card body-font login-card shadow-lg">
+            <div class="card-header title-font login-header bg-darker">
+              Ember Rising
+            </div>
+            <div class="card-body login-body">
+              <!-- <h5 class="card-title">Login</h5> -->
+              <div class="mb-3 row justify-content-center">
+                <label for="inputEmail" class="col-sm-4 col-md-3 col-form-label"
+                  >Email</label
+                >
+                <div class="col-sm-8 col-md-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputEmail"
+                    placeholder="email@example.com"
+                  />
+                </div>
+              </div>
+              <div class="mb-3 row justify-content-center">
+                <label
+                  for="inputPassword"
+                  class="col-sm-4 col-md-3 col-form-label"
+                  >Password</label
+                >
+                <div class="col-sm-8 col-md-6">
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="inputPassword"
+                    placeholder="password"
+                  />
+                </div>
+              </div>
+              <a href="#" class="btn btn-primary float-right">Login</a>
+              <a href="#" class="btn btn-secondary float-right mr-3"
+                >New Account</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Javascript -->
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
