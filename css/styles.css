@@ -8,10 +8,10 @@
   );
   height: 100vh;
   min-height: -webkit-fill-available;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 html {
-  height: -webkit-fill-available;
+  /* height: -webkit-fill-available; */
 }
 
 .login-container {
@@ -19,6 +19,8 @@ html {
 }
 .login-card {
   background-color: #172132;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08), 0 2px 2px rgba(0, 0, 0, 0.12),
+    0 4px 4px rgba(0, 0, 0, 0.16), 0 8px 8px rgba(0, 0, 0, 0.2) !important;
 }
 .login-header {
   text-align: center;
@@ -96,4 +98,67 @@ html {
 
 .btn:focus {
   box-shadow: 0 0 0 0.1px rgba(9, 117, 121, 0.25);
+}
+
+.sidebar {
+  background-color: #172132;
+  color: #d1d3d7;
+  min-height: 100vh !important;
+  border-right: 1px solid #097579;
+  z-index: 0;
+  position: fixed;
+}
+
+.nav-link:hover {
+  color: #d1d3d7;
+  border-bottom: 1px solid #097579;
+  transition: border-color 0.5s ease, color 0.5s ease;
+}
+.nav-item {
+  padding-left: 2px;
+}
+.nav-link {
+  color: #097579;
+  padding-left: 2px;
+}
+
+.navbar-dark {
+  background-color: #172132 !important;
+  z-index: 100;
+}
+
+.main-window {
+  border-top: 1px solid #097579;
+  /* width: 100%; */
+  height: 100vh;
+  background-color: #097579;
+  border-right: 1px solid #097579;
+}
+
+.main-window-row {
+  min-height: 20rem;
+  /* max-height: 40rem; */
+  height: 30rem;
+}
+
+.game-screen {
+  background-color: #192538;
+  min-width: 100%;
+  /* height: 70vh; */
+}
+.chat-screen {
+  height: 10%;
+}
+.chat-log {
+  overflow-y: scroll;
+  /* height: 100%; */
+}
+.chat-sidebar {
+  background-color: #172132;
+  color: #d1d3d7;
+}
+.chat-category {
+  border-bottom: 1px solid #097579;
+  border-bottom-right-radius: 3px;
+  background: #172132;
 }

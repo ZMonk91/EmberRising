@@ -15,58 +15,127 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="node_modules/font-awesome/css/font-awesome.min.css"
+    />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Raleway&family=Staatliches&display=swap");
     </style>
     <title>Ember Rising</title>
   </head>
 
+  <nav class="navbar navbar-dark bg-dark sticky-top">
+    <a href="#" class="navbar-brand">Ember Rising</a>
+  </nav>
   <body class="background-bg">
-    <div class="container-fluid login-container">
-      <div class="row justify-content-center">
-        <div class="col-xs-6 col-sm-8">
-          <div class="card body-font login-card shadow-lg">
-            <div class="card-header title-font login-header bg-darker">
-              Ember Rising
-            </div>
-            <div class="card-body login-body">
-              <!-- <h5 class="card-title">Login</h5> -->
-              <div class="mb-3 row justify-content-center">
-                <label for="inputEmail" class="col-sm-4 col-md-3 col-form-label"
-                  >Email</label
-                >
-                <div class="col-sm-8 col-md-6">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="inputEmail"
-                    placeholder="email@example.com"
-                  />
-                </div>
-              </div>
-              <div class="mb-3 row justify-content-center">
-                <label
-                  for="inputPassword"
-                  class="col-sm-4 col-md-3 col-form-label"
-                  >Password</label
-                >
-                <div class="col-sm-8 col-md-6">
-                  <input
-                    type="password"
-                    class="form-control"
-                    id="inputPassword"
-                    placeholder="password"
-                  />
-                </div>
-              </div>
-              <a href="#" class="btn btn-primary float-right">Login</a>
-              <a href="#" class="btn btn-secondary float-right mr-3"
-                >New Account</a
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xl-1 col-md-2 col-sm-3 sidebar pl-0">
+          <h5>Username</h5>
+          <h6>Level 1</h6>
+
+          <ul class="navbar-nav text-left">
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa fa-home"></i> Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><i class="fa fa-briefcase"></i> Inventory</a
               >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa fa-map" aria-hidden="true"></i> Adventure</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><i class="fa fa-shield" aria-hidden="true"></i> Combat</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa fa-tasks" aria-hidden="true"></i> Skills</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa fa-cog" aria-hidden="true"></i> Settings</a
+              >
+            </li>
+          </ul>
+          This is the sidebar
+        </div>
+        <div class="col-xl-11 col-md-10 col-sm-9 main-window ml-auto">
+          <div class="row main-window-row">
+            <div class="col game-screen">This is the GameScreen</div>
+          </div>
+          <div class="row chat-window-row">
+            <div class="col chat-screen">
+              <div class="row">
+                <div class="col-2 chat-sidebar">
+                  <div class="row chat-category">Game Log</div>
+                  <div class="row chat-category">General Chat</div>
+                  <div class="row chat-category">Private Messages</div>
+                  <div class="row chat-category">Chat Settings</div>
+                </div>
+                <div class="col-9 chat-log">
+                  <table class="table table-striped">
+                    <thead class="d-none">
+                      <tr>
+                        <th scope="col">Timestamp</th>
+                        <th scope="col">Username</th>
+                        <th scope="col">Message</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>This is an example of a single message</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>
+                          This is an even larger example of an even longer
+                          message to send and what would happen if the message
+                          was insanely too long to fit into a single row of text
+                          lol
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                        <td>lol</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>
+                          This is an even larger example of an even longer
+                          message to send and what would happen if the message
+                          was insanely too long to fit into a single row of text
+                          lol
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                        <td>lol</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="col-1 chat-border">Test</div>
+              </div>
+              This is the chatscreen
             </div>
           </div>
         </div>
       </div>
+      <div class="row"></div>
     </div>
     <!-- Javascript -->
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
