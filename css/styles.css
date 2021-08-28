@@ -8,10 +8,6 @@
   );
   height: 100vh;
   min-height: -webkit-fill-available;
-  /* overflow: hidden; */
-}
-html {
-  /* height: -webkit-fill-available; */
 }
 
 .login-container {
@@ -151,6 +147,7 @@ html {
 }
 .chat-log {
   overflow-y: scroll;
+  height: 10rem;
   /* height: 100%; */
 }
 .chat-sidebar {
@@ -161,4 +158,96 @@ html {
   border-bottom: 1px solid #097579;
   border-bottom-right-radius: 3px;
   background: #172132;
+}
+
+.bg-dark {
+  background-color: #172132 !important;
+  color: #d1d3d7;
+}
+
+.bg-medium {
+  background-color: #192538;
+}
+
+.chat-userlist {
+  overflow-y: auto;
+  height: 9rem;
+}
+.chat-history {
+  height: 6.5rem;
+  overflow-y: auto;
+  background-color: #192538;
+  border-left: 1px solid rgba(0, 0, 0, 0.25);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  border-top: 1px solid rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+#chat-area {
+  margin-top: 8px;
+  height: 2rem;
+}
+.chat-submit-btns {
+  margin-top: 6px;
+  /* margin-left: -1rem; */
+}
+.chat-btn-group {
+  padding-left: 1rem;
+  padding-right: 6rem;
+  padding-bottom: 1rem;
+}
+
+#chat-submit-btn {
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+}
+/* Index 2
+*/
+
+html,
+body {
+  height: 100%;
+}
+.game-window {
+  overflow-y: scroll;
+  max-height: 70vh;
+  margin-bottom: -10%;
+  /* overflow-y: scroll;
+  min-height: 15rem;
+  max-height: 25rem; */
+  /* height: 23rem; */
+}
+.row {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer {
+  height: 24%;
+  min-height: 10rem;
+  margin-top: 10%;
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  /* .game-window {
+    overflow-y: scroll;
+    max-height: 30rem !important;
+  } */
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  /* .game-window {
+    overflow-y: scroll;
+    max-height: 30rem !important;
+  } */
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
 }
