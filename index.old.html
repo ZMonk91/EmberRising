@@ -1,0 +1,268 @@
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Raleway&family=Staatliches&display=swap");
+    </style>
+    <title>Ember Rising</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-dark bg-dark navbar-expand-md sticky-top">
+      <div class="container">
+        <a class="navbar-brand ml-auto mr-5" href="#"> ER </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon mr-auto"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav me-auto text-center ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"><i class="fa fa-home"></i> Home
+                <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa fa-briefcase"></i> Inventory</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa fa-map"></i> Adventure</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa fa-shield"></i> Combat</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa fa-tasks"></i> Skills</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav justify-content-end d-none d-md-flex ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa fa-slack"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li class="nav-item">
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="btn bg-dark btn-dark ms-md-3" href="#">UserName</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa fa-cog"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="pt-5 pb-5 game-window background-bg">
+      <div class="container cards cards-hover">
+        <div class="row">
+          <div class="col-xs-12 col-lg-12 text-center"></div>
+          <div class="row">
+            <div class="col-md-6 col-lg-4">
+              <a href="#" class="card-block-link cards-padding" title="Envelope">
+                <div class="
+                    card card-block card-default
+                    text-center
+                    animated
+                    mb-4
+                    shadow-lg
+                    bg-dark
+                  ">
+                  <div class="card-body">
+                    <img alt="image" class="rounded-circle img-fluid d-block mx-auto mt-2 mb-4"
+                      src="/imgs/VikingHut.svg" style="height: 4rem" />
+                    <h4 class="display-5 mt-3">Home</h4>
+                    <p>
+                      This is your base of operations. You can upgrade it for
+                      increased storage, bonus features, and more!
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <a href="javascript:void(0)" class="card-block-link cards-padding" title="Envelope">
+                <div class="
+                    card card-block card-default
+                    text-center
+                    animated
+                    mb-4
+                    shadow-lg
+                    bg-dark
+                  ">
+                  <div class="card-body">
+                    <img alt="image" class="rounded-circle img-fluid d-block mx-auto mt-2 mb-4" src="/imgs/Backpack.svg"
+                      style="height: 4rem" />
+                    <h4 class="display-5 mt-3">Inventory</h4>
+                    <p>
+                      This is where you store items to take with you on travels.
+                      By default, you can only store 20.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <a href="javascript:void(0)" class="card-block-link cards-padding" title="Envelope">
+                <div class="
+                    card card-block card-default
+                    text-center
+                    animated
+                    mb-4
+                    shadow-lg
+                    bg-dark
+                  ">
+                  <div class="card-body">
+                    <img alt="image" class="img-fluid d-block mx-auto mt-2 mb-4" src="/imgs/Map.svg"
+                      style="height: 4rem" />
+                    <h4 class="display-5 mt-3">Adventure</h4>
+                    <p>
+                      Journey to new territories in search of treasures and
+                      knowledge.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <a href="javascript:void(0)" class="card-block-link cards-padding" title="Envelope">
+                <div class="
+                    card card-block card-default
+                    text-center
+                    animated
+                    mb-4
+                    shadow-lg
+                    bg-dark
+                  ">
+                  <div class="card-body">
+                    <img alt="image" class="img-fluid d-block mx-auto mt-2 mb-4" src="/imgs/TwoAxesAndShield.svg"
+                      style="height: 4rem" />
+                    <h4 class="display-5 mt-3">Combat</h4>
+                    <p>
+                      Slay your enemies to grow your combat skills. The harder
+                      the challenge, the greater the rewards!
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <a href="javascript:void(0)" class="card-block-link cards-padding" title="Envelope">
+                <div class="
+                    card card-block card-default
+                    text-center
+                    animated
+                    mb-4
+                    shadow-lg
+                    bg-dark
+                  ">
+                  <div class="card-body">
+                    <img alt="image" class="rounded-circle img-fluid d-block mx-auto mt-2 mb-4" src="/imgs/Libra.svg"
+                      style="height: 4rem" />
+                    <h4 class="display-5 mt-3">Market</h4>
+                    <p>
+                      Exchange items you find along your adventures for gold or
+                      purchase new items to help you on your quest.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <a href="javascript:void(0)" class="card-block-link cards-padding" title="Envelope">
+                <div class="
+                    home-card
+                    card card-block card-default
+                    text-center
+                    animated
+                    mb-4
+                    shadow-lg
+                    bg-dark
+                  ">
+                  <div class="card-body">
+                    <img alt="image" class="img-fluid d-block mx-auto mt-2 mb-4" src="/imgs/BarGraph.svg"
+                      style="height: 4rem" />
+                    <h4 class="display-5 mt-3">Skills</h4>
+                    <p>
+                      As you progress in each skill, you will unlock more
+                      features and get bonuses for many other areas.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-dark">
+      <div class="row chat-window-row">
+        <div class="col-2 chat-sidebar bg-medium pr-0">
+          <div class="row chat-category">Game Log</div>
+          <div class="row chat-category">General Chat</div>
+          <div class="row chat-category">Private Messages</div>
+          <div class="row chat-category">Chat Settings</div>
+        </div>
+        <div class="col-8 chat-log bg-dark">
+          <div class="chat-history">
+            12:59pm Username1: Lol this is so funny <br />
+            12:59pm Username1: Lol this is so funny <br />
+            12:59pm Username1: Lol this is so funny <br />
+            12:59pm Username1: Lol this is so funny <br />
+            12:59pm Username1: Lol this is so funny <br />
+            12:59pm Username1: Lol this is so funny <br />
+            12:59pm Username1: Lol this is so funny <br />
+            12:59pm Username1: Lol this is so funny <br />
+            12:59pm Username1: Lol this is so funny <br />
+            12:59pm Username1: Lol this is so funny <br />
+            12:59pm Username1: Lol this is so funny <br />
+            12:59pm Username1: Lol this is so funny <br />
+            12:59pm Username1: Lol this is so funny <br />
+            12:59pm Username1: Lol this is so funny <br />
+            12:59pm Username1: Lol this is so funny <br />
+          </div>
+          <div class="row">
+            <!-- <div class="col-1">|</div> -->
+            <div class="col-10 form-group pl-0">
+              <textarea class="form-control" name="chat-area" id="chat-area" cols="12" rows="1"></textarea>
+            </div>
+            <div class="col-2 btn-group chat-btn-group" role="group">
+              <button type="button" class="btn btn-dark chat-submit-btns dropdown-toggle"
+                id="emoticon-dropdown-btn"></button>
+              <button type="submit" class="btn btn-dark chat-submit-btns" id="chat-submit-btn">
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-2 chat-userlist">
+          <em>4 Users Online</em><br />
+          zspitfire04<br />zspitfire06<br />zmonk91<br />username4<br />Kassius<br />Zezima<br />
+          zspitfire04<br />zspitfire06<br />zmonk91<br />username4<br />Kassius<br />Zezima
+          This is the sidebar
+        </div>
+      </div>
+    </footer>
+    <!-- Javascript -->
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+
+</html>

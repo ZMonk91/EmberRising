@@ -251,3 +251,30 @@ footer {
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
 }
+
+.css-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "banner banner banner banner banner banner banner"
+    "sub-banner sub-banner sub-banner sub-banner sub-banner sub-banner sub-banner"
+    "game-window game-window game-window game-window game-window game-window game-window"
+    "game-window game-window game-window game-window game-window game-window game-window"
+    "game-window game-window game-window game-window game-window game-window game-window"
+    "chatscreen chatscreen chatscreen chatscreen chatscreen chatscreen chatscreen"
+    ". . . . . . .";
+}
+.banner {
+  grid-area: banner;
+}
+.sub-banner {
+  grid-area: sub-banner;
+}
+.game-window {
+  grid-area: game-window;
+}
+.chatscreen {
+  grid-area: chatscreen;
+}

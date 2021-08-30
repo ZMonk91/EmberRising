@@ -1,379 +1,398 @@
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
-    />
-    <!-- Custom Styles -->
-    <link rel="stylesheet" href="css/styles.css" />
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="node_modules/font-awesome/css/font-awesome.min.css"
-    />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Raleway&family=Staatliches&display=swap");
-    </style>
-    <title>Ember Rising</title>
-  </head>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Raleway&family=Staatliches&display=swap");
+        </style>
+        <!-- Custom Styles -->
+        <link rel="stylesheet" href="css/styles2.css" />
+        <title>Ember Rising</title>
+    </head>
 
     <body>
-      <nav class="navbar navbar-dark bg-dark navbar-expand-md sticky-top">
-        <div class="container">
-          <a class="navbar-brand ml-auto mr-5" href="#">
-            ER
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbar"
-            aria-controls="navbar"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon mr-auto"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbar">
-            <ul class="navbar-nav me-auto text-center ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#"
-                  ><i class="fa fa-home"></i> Home <span class="sr-only">(current)</span></a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fa fa-briefcase"></i> Inventory</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fa fa-map"></i> Adventure</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fa fa-shield"></i> Combat</a>
-              </li>
-                            <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fa fa-tasks"></i> Skills</a>
-              </li>
+        <!-- Navbar -->
+        <nav class="navbar bg-primary sticky-top">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand text-active ml-0">Username</a>
+                <ul class="navbar-nav ml-0 mr-auto">
+                    <li class="nav-item">
+                        <div class="nav-btn nav-btn-coin-wrapper">
+                            <span class="nav-btn-coins"><img id="nav-coin" src="/imgs/Coin.svg" alt=""> 12354</span>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="nav-btn">
+                            <span>12/50 HP</span>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="nav-btn">
+                            <span>50/50 MP</span>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-0 mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Update Log</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Wiki</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Discord</a>
+                    </li>
+                </ul>
 
-            </ul>
-            <ul
-              class="navbar-nav justify-content-end d-none d-md-flex ml-auto"
-            >
-              <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fa fa-slack"></i></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fa fa-twitter"></i></a>
-              </li>
-              <li class="nav-item">
-                <div class="progress">
-  <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-</div>
-
-              </li>
-              <li class="nav-item">
-                <a class="btn bg-dark btn-dark ms-md-3" href="#">UserName</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fa fa-cog"></i></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-
-      <section class="pt-5 pb-5 game-window background-bg">
-        <div class="container cards cards-hover">
-          <div class="row">
-            <div class="col-xs-12 col-lg-12 text-center"></div>
-            <div class="row">
-              <div class="col-md-6 col-lg-4">
-                <a
-                  href="javascript:void(0)"
-                  class="card-block-link cards-padding"
-                  title="Envelope"
-                >
-                  <div
-                    class="
-                      card card-block card-default
-                      text-center
-                      animated
-                      mb-4
-                      shadow-lg
-                      bg-light
-                    "
-                  >
-                    <div class="card-body">
-                      <img
-                        alt="image"
-                        class="
-                          rounded-circle
-                          img-fluid
-                          d-block
-                          mx-auto
-                          mt-2
-                          mb-4
-                        "
-                        src=" https://dummyimage.com/60x60/5fa9f8/efefef"
-                      />
-                      <h4 class="display-5 mt-3">Wallet</h4>
-                      <p>
-                        Bitcoin is a revolutionary invention of the last decade.
-                        Its essential meaning is money digitization.
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-md-6 col-lg-4">
-                <a
-                  href="javascript:void(0)"
-                  class="card-block-link cards-padding"
-                  title="Envelope"
-                >
-                  <div
-                    class="
-                      card card-block card-default
-                      text-center
-                      animated
-                      mb-4
-                      shadow-lg
-                      bg-light
-                    "
-                  >
-                    <div class="card-body">
-                      <img
-                        alt="image"
-                        class="
-                          rounded-circle
-                          img-fluid
-                          d-block
-                          mx-auto
-                          mt-2
-                          mb-4
-                        "
-                        src=" https://dummyimage.com/60x60/5fa9f8/efefef"
-                      />
-                      <h4 class="display-5 mt-3">Send</h4>
-                      <p>
-                        Bitcoin is a revolutionary invention of the last decade.
-                        Its essential meaning is money digitization.
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-md-6 col-lg-4">
-                <a
-                  href="javascript:void(0)"
-                  class="card-block-link cards-padding"
-                  title="Envelope"
-                >
-                  <div
-                    class="
-                      card card-block card-default
-                      text-center
-                      animated
-                      mb-4
-                      shadow-lg
-                      bg-light
-                    "
-                  >
-                    <div class="card-body">
-                      <img
-                        alt="image"
-                        class="
-                          rounded-circle
-                          img-fluid
-                          d-block
-                          mx-auto
-                          mt-2
-                          mb-4
-                        "
-                        src=" https://dummyimage.com/60x60/5fa9f8/efefef"
-                      />
-                      <h4 class="display-5 mt-3">Receive</h4>
-                      <p>
-                        Bitcoin is a revolutionary invention of the last decade.
-                        Its essential meaning is money digitization.
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-md-6 col-lg-4">
-                <a
-                  href="javascript:void(0)"
-                  class="card-block-link cards-padding"
-                  title="Envelope"
-                >
-                  <div
-                    class="
-                      card card-block card-default
-                      text-center
-                      animated
-                      mb-4
-                      shadow-lg
-                      bg-light
-                    "
-                  >
-                    <div class="card-body">
-                      <img
-                        alt="image"
-                        class="
-                          rounded-circle
-                          img-fluid
-                          d-block
-                          mx-auto
-                          mt-2
-                          mb-4
-                        "
-                        src=" https://dummyimage.com/60x60/5fa9f8/efefef"
-                      />
-                      <h4 class="display-5 mt-3">Secure</h4>
-                      <p>
-                        Bitcoin is a revolutionary invention of the last decade.
-                        Its essential meaning is money digitization.
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-md-6 col-lg-4">
-                <a
-                  href="javascript:void(0)"
-                  class="card-block-link cards-padding"
-                  title="Envelope"
-                >
-                  <div
-                    class="
-                      card card-block card-default
-                      text-center
-                      animated
-                      mb-4
-                      shadow-lg
-                      bg-light
-                    "
-                  >
-                    <div class="card-body">
-                      <img
-                        alt="image"
-                        class="
-                          rounded-circle
-                          img-fluid
-                          d-block
-                          mx-auto
-                          mt-2
-                          mb-4
-                        "
-                        src=" https://dummyimage.com/60x60/5fa9f8/efefef"
-                      />
-                      <h4 class="display-5 mt-3">Exchange</h4>
-                      <p>
-                        Bitcoin is a revolutionary invention of the last decade.
-                        Its essential meaning is money digitization.
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-md-6 col-lg-4">
-                <a
-                  href="javascript:void(0)"
-                  class="card-block-link cards-padding"
-                  title="Envelope"
-                >
-                  <div
-                    class="
-                      card card-block card-default
-                      text-center
-                      animated
-                      mb-4
-                      shadow-lg
-                      bg-light
-                    "
-                  >
-                    <div class="card-body">
-                      <img
-                        alt="image"
-                        class="
-                          rounded-circle
-                          img-fluid
-                          d-block
-                          mx-auto
-                          mt-2
-                          mb-4
-                        "
-                        src=" https://dummyimage.com/60x60/5fa9f8/efefef"
-                      />
-                      <h4 class="display-5 mt-3">Insurance</h4>
-                      <p>
-                        Bitcoin is a revolutionary invention of the last decade.
-                        Its essential meaning is money digitization.
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </div>
+                <div class="d-flex">
+                    <a href="#" class="text-active"> 21 Players Online</a>
+                </div>
             </div>
-          </div>
+        </nav>
+
+        <!-- Body -->
+        <div class="container-fluid">
+            <div class="row">
+
+                <!-- Sidenav -->
+                <div class="col-2 sidebar bg-dark text-active px-0">
+                    <ul class="nav side-nav">
+                        <a href="#" class="nav-item row">
+                            <i class="fa fa-home col-2 side-nav-icon"></i>
+                            <span class="col-8 side-nav-label" id="home-btn">Home</span>
+                        </a>
+                        <a href="#" class="nav-item row">
+                            <i class="fa fa-briefcase col-2 side-nav-icon"></i>
+                            <span class="col-8 side-nav-label" id="inventory-btn">Inventory</span>
+                        </a>
+                        <a href="#" class="nav-item row">
+                            <i class="fa fa-tasks col-2 side-nav-icon"></i>
+                            <span class="col-8 side-nav-label" id="skills-btn">Skills</span>
+                        </a>
+                        <a href="#" class="nav-item row">
+                            <i class="fa fa-map col-2 side-nav-icon"></i>
+                            <span class="col-8 side-nav-label" id="adventure-btn">Adventure</span>
+                        </a>
+
+                        <a href="#" class="nav-item row">
+                            <i class="fa fa-shield col-2 side-nav-icon"></i>
+                            <span class="col-8 side-nav-label" id="combat-btn">Combat</span>
+                        </a>
+                        <a href="#" class="nav-item row">
+                            <i class="fa fa-money col-2 side-nav-icon"></i>
+                            <span class="col-8 side-nav-label" id="market-btn">Market</span>
+                        </a>
+                    </ul>
+                    <ul class="nav side-nav side-nav-bottom-btns">
+                        <a href="#" class="nav-item row">
+                            <i class="fa fa-trophy col-2 side-nav-icon"></i>
+                            <span class="col-8 side-nav-label" id="achievements-btn">Achievements</span>
+                        </a>
+                        <a href="#" class="nav-item row">
+                            <i class="fa fa-cog col-2 side-nav-icon"></i>
+                            <span class="col-8 side-nav-label" id="settings-btn">Settings</span>
+                        </a>
+
+                    </ul>
+                </div>
+                <!-- Main Window -->
+                <div class="col-10 main-window bg-med text-inactive">
+                    <div class="row">
+                        <!-- Game Window -->
+                        <div class="col-12 game-screen">
+
+                            <!-- Home Screen -->
+                            <div class="card homeCard">
+                                <img src="/imgs/VikingHut.svg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Home</h5>
+                                    <p class="card-text">This is your base of operations. You can upgrade it for
+                                        increased storage, bonus features, and more! </p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item card-btn"><i class="fa fa-bed"> Rest</i></li>
+                                    <li class="list-group-item card-btn"><i class="fa fa-plus"> Upgrade</i></li>
+                                </ul>
+                            </div>
+
+
+                            <!-- Inventory Screen -->
+                            <div class="card inventoryCard" style="max-width: 75%;">
+                                <img src="/imgs/Backpack.svg" class="card-img-top" style="max-height: 10rem;" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Inventory</h5>
+                                    <p class="card-text">This is where you store items to take with you on travels.
+                                        By default, you can only store 20.</p>
+                                </div>
+
+                                <div class="card-body inventory-card-list ">
+                                    <div class="row">
+                                        <div class="inv-item">
+                                            <image class="inv-img inv-type-val" src="/imgs/Coin.svg"><span
+                                                    class="quantity">99K</span></image>
+                                        </div>
+
+                                        <div class="inv-item">
+                                            <image class="inv-img inv-type-val" src="/imgs/Coin.svg"><span
+                                                    class="quantity">99K</span></image>
+                                        </div>
+                                        <div class="inv-item">
+                                            <image class="inv-img inv-type-val" src="/imgs/Coin.svg">
+                                                <span class="quantity">99K</span>
+                                            </image>
+                                        </div>
+                                        <div class="inv-item">
+                                            <image class="inv-img inv-type-val" src="/imgs/Coin.svg">
+                                                <span class="quantity">99K</span>
+                                            </image>
+                                        </div>
+                                        <div class="inv-item">
+                                            <image class="inv-img inv-type-val" src="/imgs/Coin.svg">
+                                                <span class="quantity">99K</span>
+                                            </image>
+                                        </div>
+                                        <div class="inv-item">
+                                            <image class="inv-img inv-type-val" src="/imgs/Coin.svg">
+                                                <span class="quantity">99K</span>
+                                            </image>
+                                        </div>
+                                        <div class="inv-item">
+                                            <image class="inv-img inv-type-val" src="/imgs/Coin.svg">
+                                                <span class="quantity">99K</span>
+                                            </image>
+                                        </div>
+                                        <div class="inv-item">
+                                            <image class="inv-img inv-type-val" src="/imgs/Coin.svg">
+                                                <span class="quantity">99K</span>
+                                            </image>
+                                        </div>
+
+                                        <div class="inv-item">
+                                            <image class="inv-img inv-type-val" src="/imgs/Coin.svg"><span
+                                                    class="quantity">99K</span></image>
+                                        </div>
+                                        <div class="inv-item">
+                                            <image class="inv-img inv-type-val" src="/imgs/Coin.svg">
+                                                <span class="quantity">99K</span>
+                                            </image>
+                                        </div>
+                                        <div class="inv-item">
+                                            <image class="inv-img inv-type-val" src="/imgs/Coin.svg">
+                                                <span class="quantity">99K</span>
+                                            </image>
+                                        </div>
+                                        <div class="inv-item">
+                                            <image class="inv-img inv-type-val" src="/imgs/Coin.svg">
+                                                <span class="quantity">99K</span>
+                                            </image>
+                                        </div>
+                                        <div class="inv-item">
+                                            <image class="inv-img inv-type-val" src="/imgs/Coin.svg">
+                                                <span class="quantity">99K</span>
+                                            </image>
+                                        </div>
+                                        <div class="inv-item">
+                                            <image class="inv-img inv-type-val" src="/imgs/Coin.svg">
+                                                <span class="quantity">99K</span>
+                                            </image>
+                                        </div>
+                                        <div class="inv-item">
+                                            <image class="inv-img inv-type-val" src="/imgs/Coin.svg">
+                                                <span class="quantity">99K</span>
+                                            </image>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Skills Screen -->
+
+                            <div class="card skillsCard" style="max-width: 18rem;">
+                                <img src="/imgs/BarGraph.svg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Skills</h5>
+                                    <p class="card-text">As you progress in each skill, you will unlock more
+                                        features and get bonuses for many other areas..</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">An item</li>
+                                    <li class="list-group-item">A second item</li>
+                                    <li class="list-group-item">A third item</li>
+                                </ul>
+                                <div class="card-body">
+                                    <a href="#" class="card-link">Card link</a>
+                                    <a href="#" class="card-link">Another link</a>
+                                </div>
+                            </div>
+
+                            <!-- Adventure Screen -->
+
+                            <div class="card adventureCard" style="width: 18rem;">
+                                <img src="/imgs/Map.svg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Adventure</h5>
+                                    <p class="card-text">Journey to new territories in search of treasures and
+                                        knowledge.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">An item</li>
+                                    <li class="list-group-item">A second item</li>
+                                    <li class="list-group-item">A third item</li>
+                                </ul>
+                                <div class="card-body">
+                                    <a href="#" class="card-link">Card link</a>
+                                    <a href="#" class="card-link">Another link</a>
+                                </div>
+                            </div>
+
+                            <!-- Combat Screen -->
+                            <div class="card combatCard" style="max-width: 18rem;">
+                                <img src="/imgs/TwoAxesAndShield.svg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Combat</h5>
+                                    <p class="card-text">Slay your enemies to grow your combat skills. The harder
+                                        the challenge, the greater the rewards!</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">An item</li>
+                                    <li class="list-group-item">A second item</li>
+                                    <li class="list-group-item">A third item</li>
+                                </ul>
+                                <div class="card-body">
+                                    <a href="#" class="card-link">Card link</a>
+                                    <a href="#" class="card-link">Another link</a>
+                                </div>
+                            </div>
+
+                            <!-- Market Screen -->
+
+                            <div class="card marketCard" style="width: 18rem;">
+                                <img src="/imgs/Libra.svg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Market</h5>
+                                    <p class="card-text">Exchange items you find along your adventures for gold or
+                                        purchase new items to help you on your quest.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">An item</li>
+                                    <li class="list-group-item">A second item</li>
+                                    <li class="list-group-item">A third item</li>
+                                </ul>
+                                <div class="card-body">
+                                    <a href="#" class="card-link">Card link</a>
+                                    <a href="#" class="card-link">Another link</a>
+                                </div>
+                            </div>
+
+                            <!-- Achievements Screen -->
+
+                            <div class="card achievementsCard" style="width: 18rem;">
+                                <img src="..." class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Achievments</h5>
+                                    <p class="card-text">Some quick example text to build on
+                                        the card title and make up
+                                        the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">An item</li>
+                                    <li class="list-group-item">A second item</li>
+                                    <li class="list-group-item">A third item</li>
+                                </ul>
+                                <div class="card-body">
+                                    <a href="#" class="card-link">Card link</a>
+                                    <a href="#" class="card-link">Another link</a>
+                                </div>
+                            </div>
+
+                            <!-- Settings Screen -->
+
+                            <div class="card settingsCard" style="width: 18rem;">
+                                <img src="..." class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Settings</h5>
+                                    <p class="card-text">Some quick example text to build on
+                                        the card title and make up
+                                        the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">An item</li>
+                                    <li class="list-group-item">A second item</li>
+                                    <li class="list-group-item">A third item</li>
+                                </ul>
+                                <div class="card-body">
+                                    <a href="#" class="card-link">Card link</a>
+                                    <a href="#" class="card-link">Another link</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- Chat Window -->
+                        <div class="col-12 chat-screen">
+                            <div class="row">
+                                <div class="col-1 chat-btns">
+                                    <ul class="nav">
+                                        <a href="#" class="nav-item">Game Log</a>
+                                    </ul>
+                                    <ul class="nav">
+                                        <a href="#" class="nav-item">General</a>
+                                    </ul>
+                                    <ul class="nav">
+                                        <a href="#" class="nav-item">Private</a>
+                                    </ul>
+                                    <ul class="nav">
+                                        <a href="#" class="nav-item">Chat Settings</a>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="chat-window" id="chat-log">
+                                            <p>12:35 Harold: This is so fun</p><br>
+                                            <p>12:35 Harold: This is so fun</p><br>
+                                            <p>12:35 Harold: This is so fun</p><br>
+                                            <p>12:35 Harold: This is so fun</p><br>
+                                            <p>12:35 Harold: This is so fun</p><br>
+                                            <p>12:35 Harold: This is so fun</p><br>
+                                            <p>12:35 Harold: This is so fun</p><br>
+                                            <p>12:35 Harold: This is so fun</p><br>
+                                            <p>12:35 Harold: This is so fun</p><br>
+                                            <p>12:35 Harold: This is so fun</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <textarea class="form-control" name="chat-input" id="chat-input" cols="20"
+                                            rows="1" placeholder="Type a message...">
+                                        </textarea>
+                                        <div class="chat-input-btns">
+                                            <button class="chat-input-btn" id="emoticon-btn">+</button><button
+                                                class="chat-input-btn" id="chat-submit-btn">Submit</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-2 text-center">Online Users
+                                    <div class="online-users text-left">Bill <br> bob <br> zach <br> ted <br> Bill <br>
+                                        bob <br>
+                                        zach <br> ted <br></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </section>
-      <footer class="bg-dark">
-          <div class="row chat-window-row">
-              <div class="col-2 chat-sidebar bg-medium pr-0">
-                  <div class="row chat-category">Game Log</div>
-                  <div class="row chat-category">General Chat</div>
-                  <div class="row chat-category">Private Messages</div>
-                  <div class="row chat-category">Chat Settings</div>
-              </div>
-              <div class="col-8 chat-log bg-dark">
-                  <div class="chat-history">
-                    12:59pm Username1: Lol this is so funny <br>
-                    12:59pm Username1: Lol this is so funny <br>
-                    12:59pm Username1: Lol this is so funny <br>
-                    12:59pm Username1: Lol this is so funny <br>
-                    12:59pm Username1: Lol this is so funny <br>
-                    12:59pm Username1: Lol this is so funny <br>
-                    12:59pm Username1: Lol this is so funny <br>
-                    12:59pm Username1: Lol this is so funny <br>
-                    12:59pm Username1: Lol this is so funny <br>
-                    12:59pm Username1: Lol this is so funny <br>
-                    12:59pm Username1: Lol this is so funny <br>
-                    12:59pm Username1: Lol this is so funny <br>
-                    12:59pm Username1: Lol this is so funny <br>
-                    12:59pm Username1: Lol this is so funny <br>
-                    12:59pm Username1: Lol this is so funny <br>
-                </div>
-                <div class="row">
-                    <!-- <div class="col-1">|</div> -->
-                    <div class="col-10 form-group pl-0">
-                        <textarea class="form-control" name="chat-area" id="chat-area" cols="12" rows="1"></textarea>
 
-                    </div>
-                    <div class="col-2 btn-group chat-btn-group" role="group">
-                        <button type="button" class="btn btn-dark chat-submit-btns dropdown-toggle" id="emoticon-dropdown-btn"></button>
-                        <button type="submit" class="btn btn-dark chat-submit-btns" id="chat-submit-btn">Submit</button>
-                    </div>
-                </div>
-
-              </div>
-              <div class="col-2 chat-userlist">
-                  <em>4 Users Online</em><br>
-                  zspitfire04<br>zspitfire06<br>zmonk91<br>username4<br>Kassius<br>Zezima<br>
-                  zspitfire04<br>zspitfire06<br>zmonk91<br>username4<br>Kassius<br>Zezima
-                  This is the sidebar
-              </div>
-          </div></footer>
-    <!-- Javascript -->
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="scripts.js"></script>
     </body>
-  </html>
+
 </html>
