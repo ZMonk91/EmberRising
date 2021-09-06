@@ -1,64 +1,61 @@
 /* Custom Color Variables */
 
-:root {
-  --bg-darkest: #161921;
-  --bg-dark: #1b202b;
-  --bg-med: #212735;
-  --bg-light: #262f3f;
-  --text-active: rgba(255, 255, 255, 0.75);
-  --text-inactive: rgb(178, 181, 187);
-  --bg-primary: rgb(59, 132, 223);
-  --bg-secondary: rgb(210, 109, 34);
-  --bg-third: rgb(67, 160, 71);
-  --drop-shadow: rgba(127, 127, 127, 1);
-}
+$bg-darkest: #161921;
+$bg-dark: #1b202b;
+$bg-med: #212735;
+$bg-light: #262f3f;
+$text-active: rgba(255, 255, 255, 0.75);
+$text-inactive: rgb(178, 181, 187);
+$bg-primary: rgb(59, 132, 223);
+$bg-secondary: rgb(210, 109, 34);
+$bg-third: rgb(67, 160, 71);
+$drop-shadow: rgba(127, 127, 127, 1);
 
 .bg-darkest {
-  background-color: var(--bg-darkest);
+  background-color: $bg-darkest;
 }
 
 .bg-dark {
-  background-color: var(--bg-dark) !important;
+  background-color: $bg-dark !important;
 }
 
 .bg-med {
-  background-color: var(--bg-med);
+  background-color: $bg-med;
 }
 
 .bg-light {
-  background-color: var(--bg-light) !important;
-}
-
-.text-active {
-  color: var(--text-active) !important;
-}
-
-.text-inactive {
-  color: var(--text-inactive) !important;
+  background-color: $bg-light !important;
 }
 
 .bg-primary {
-  background-color: var(--bg-primary) !important;
+  background-color: $bg-primary !important;
 }
 
 .bg-secondary {
-  background-color: var(--bg-secondary) !important;
+  background-color: $bg-secondary !important;
 }
 .bg-third {
-  background-color: var(--bg-third);
+  background-color: $bg-third;
+}
+.text-active {
+  color: $text-active !important;
+}
+
+.text-inactive {
+  color: $text-inactive !important;
 }
 
 .nav-link {
-  color: var(--text-active);
+  color: $text-active;
 }
 
 .navbar-nav {
   flex-direction: row;
-}
 
-.navbar-nav .nav-link {
-  padding-right: 1rem !important;
-  padding-left: 1rem !important;
+  .nav-link {
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+  }
 }
 
 #nav-coin {
@@ -70,13 +67,15 @@
 .nav-btn-coin-wrapper {
   padding-top: 0.1rem !important;
   padding-bottom: 0.2rem !important;
+
+  span {
+    display: inline-flex;
+    margin-bottom: auto;
+    padding-bottom: 0.1rem !important;
+    padding-top: 0.1rem !important;
+  }
 }
-.nav-btn-coin-wrapper span {
-  display: inline-flex;
-  margin-bottom: auto;
-  padding-bottom: 0.1rem !important;
-  padding-top: 0.1rem !important;
-}
+
 .nav-btn-coins {
   padding: 0.1rem 1rem 0.2rem 0.1rem !important;
 }
@@ -91,14 +90,14 @@
 .game-screen {
   height: calc(80vh - 56px);
   min-height: 20rem;
-  border-bottom: 1px solid var(--bg-primary);
-  border-left: 1px solid var(--bg-primary);
+  border-bottom: 1px solid$bg-primary;
+  border-left: 1px solid$bg-primary;
   padding-top: 1rem;
   padding-bottom: 2rem;
   display: flex;
   justify-content: space-evenly;
 
-  /* max-height: calc(75vh - 56px); */
+  /* max-height:  75vh - 56px; */
 }
 .main-window {
   right: -5rem;
@@ -106,23 +105,24 @@
 .chat-screen {
   height: calc(20vh - 56px);
   min-height: 10rem;
-  /* border-top: 1px solid var(--bg-primary) !important; */
-  background-color: var(--bg-dark);
+  /* border-top: 1px solid $bg-primary !important; */
+  background-color: $bg-dark;
 }
 
 .nav-btn {
-  background-color: var(--bg-med);
-  color: var(--text-inactive);
+  background-color: $bg-med;
+  color: $text-inactive;
   border-radius: 4px;
   margin-right: 1rem;
   padding: 0.25rem;
+
+  span {
+    font-size: small;
+    padding: 1rem;
+    padding-bottom: 2rem;
+  }
 }
 
-.nav-btn span {
-  font-size: small;
-  padding: 1rem;
-  padding-bottom: 2rem;
-}
 .side-nav {
   margin-left: 15px;
 }
@@ -144,29 +144,29 @@
 }
 
 a.nav-item {
-  color: var(--text-inactive);
+  color: $text-inactive;
 }
 a.nav-item:hover {
   font-size: large;
-  color: var(--text-active);
+  color: $text-active;
   text-decoration: none;
-}
 
-a.nav-item:hover .side-nav-icon {
-  filter: drop-shadow(0.1rem 0.1rem 0.5rem var(--drop-shadow));
+  .side-nav-icon {
+    filter: drop-shadow(0.1rem 0.1rem 0.5rem $drop-shadow);
+  }
 }
 
 .chat-btns {
-  border: 1px solid var(--bg-darkest);
+  border: 1px solid $bg-darkest;
   font-size: small;
-  color: var(--text-inactive);
+  color: $text-inactive;
   padding-left: 1px;
   padding-right: 1px;
   border-bottom: none;
-}
 
-.chat-btns .nav {
-  border-bottom: 1px solid var(--bg-darkest);
+  .nav {
+    border-bottom: 1px solid $bg-darkest;
+  }
 }
 
 .chat-window {
@@ -183,29 +183,32 @@ a.nav-item:hover .side-nav-icon {
   flex-direction: column-reverse;
 }
 
-.chat-window p {
-  margin-bottom: 0;
+.chat-window {
+  p {
+    margin-bottom: 0;
+  }
 }
+
 #chat-input {
   height: 2rem;
   padding-top: 0;
   margin: 0.5rem 1rem;
-  border-color: var(--bg-dark);
-  background: var(--bg-light);
+  border-color: $bg-dark;
+  background: $bg-light;
   width: calc(100% - 2.25rem);
   resize: none !important;
 }
 
 #chat-input:focus {
-  filter: drop-shadow(0rem 0rem 0.1rem var(--drop-shadow)) !important;
+  filter: drop-shadow(0rem 0rem 0.1rem $drop-shadow) !important;
   border: none;
-  color: var(--text-active);
+  color: $text-active;
 }
 
 .form-control#chat-input:focus {
-  /* box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.25); */
   box-shadow: none;
 }
+
 .chat-input-btns {
   margin-left: -5.9rem !important;
   height: 2rem;
@@ -216,8 +219,8 @@ a.nav-item:hover .side-nav-icon {
 }
 
 .chat-input-btn {
-  color: var(--text-active);
-  background-color: var(--bg-primary);
+  color: $text-active;
+  background-color: $bg-primary;
 }
 #emoticon-btn {
   border: none;
@@ -227,27 +230,27 @@ a.nav-item:hover .side-nav-icon {
 #chat-submit-btn {
   border-radius: 0 4px 4px 0;
   border: none;
-  border-left: 1px solid var(--bg-dark);
+  border-left: 1px solid $bg-dark;
 }
 .online-users {
   overflow-y: auto;
   padding-left: 1rem;
   max-height: 5rem;
-  background-color: var(--bg-med);
+  background-color: $bg-med;
 }
 
 .card {
   max-width: 33%;
-  background-color: var(--bg-dark);
+  background-color: $bg-dark;
 }
 
 .card-btn {
-  background-color: var(--bg-med);
+  background-color: $bg-med;
   text-align: center;
 }
 
 .card-btn:hover {
-  background-color: var(--bg-light);
+  background-color: $bg-light;
 }
 
 .card-img-top {
@@ -270,7 +273,7 @@ a.nav-item:hover .side-nav-icon {
 .inv-img {
   max-height: 4rem;
   padding: 1rem;
-  border: 0.25rem solid var(--bg-darkest);
+  border: 0.25rem solid $bg-darkest;
   border-radius: 4px;
   position: relative;
 }
@@ -289,7 +292,4 @@ a.nav-item:hover .side-nav-icon {
   position: absolute;
   left: 25%;
   bottom: 20%;
-  /* position: absolute; */
-  /* top: 0; */
-  /* translate: middle; */
 }
